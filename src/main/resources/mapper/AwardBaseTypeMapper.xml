@@ -8,7 +8,7 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="award_name" jdbcType="VARCHAR" property="awardName" />
     <result column="award_type" jdbcType="INTEGER" property="awardType" />
-    <result column="order" jdbcType="INTEGER" property="order" />
+    <result column="sort" jdbcType="INTEGER" property="order" />
     <result column="pass_percentage" jdbcType="DOUBLE" property="passPercentage" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />

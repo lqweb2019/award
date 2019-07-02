@@ -11,7 +11,7 @@
     <result column="obj_id" jdbcType="INTEGER" property="objId" />
     <result column="obj_name" jdbcType="VARCHAR" property="objName" />
     <result column="obj_code" jdbcType="VARCHAR" property="objCode" />
-    <result column="order" jdbcType="SMALLINT" property="order" />
+    <result column="sort" jdbcType="SMALLINT" property="order" />
     <result column="award_type_id" jdbcType="INTEGER" property="awardTypeId" />
     <result column="award_type_name" jdbcType="VARCHAR" property="awardTypeName" />
     <result column="award_year" jdbcType="SMALLINT" property="awardYear" />

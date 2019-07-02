@@ -30,8 +30,8 @@ public class AwardObj extends BasePO<Integer> {
     @Column(name = "obj_code")
     private String objCode;
 
-    @Column(name = "order")
-    private Short order;
+    @Column(name = "sort")
+    private Short sort;
 
     @Column(name = "award_type_id")
     private Integer awardTypeId;
@@ -161,17 +161,17 @@ public class AwardObj extends BasePO<Integer> {
     }
 
     /**
-     * @return order
+     * @return sort
      */
-    public Short getOrder() {
-        return order;
+    public Short getsort() {
+        return sort;
     }
 
     /**
-     * @param order
+     * @param sort
      */
-    public void setOrder(Short order) {
-        this.order = order;
+    public void setsort(Short sort) {
+        this.sort = sort;
     }
 
     /**

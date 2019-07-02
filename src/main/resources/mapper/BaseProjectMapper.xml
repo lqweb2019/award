@@ -23,7 +23,7 @@
     <result column="result_type_name" jdbcType="VARCHAR" property="resultTypeName" />
     <result column="project_score" jdbcType="DECIMAL" property="projectScore" />
     <result column="status" jdbcType="INTEGER" property="status" />
-    <result column="order" jdbcType="INTEGER" property="order" />
+    <result column="sort" jdbcType="INTEGER" property="order" />
     <result column="first_prize_id" jdbcType="INTEGER" property="firstPrizeId" />
     <result column="first_prize_name" jdbcType="VARCHAR" property="firstPrizeName" />
     <result column="first_prize_result" jdbcType="INTEGER" property="firstPrizeResult" />

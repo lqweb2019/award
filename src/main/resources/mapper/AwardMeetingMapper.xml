@@ -20,7 +20,7 @@
     <result column="round_index" jdbcType="SMALLINT" property="roundIndex" />
     <result column="round_status_id" jdbcType="TINYINT" property="roundStatusId" />
     <result column="round_status_name" jdbcType="VARCHAR" property="roundStatusName" />
-    <result column="order" jdbcType="TINYINT" property="order" />
+    <result column="sort" jdbcType="TINYINT" property="order" />
     <result column="award_type_type" jdbcType="TINYINT" property="awardTypeType" />
     <result column="prize0_num" jdbcType="SMALLINT" property="prize0Num" />
     <result column="prize1_num" jdbcType="SMALLINT" property="prize1Num" />

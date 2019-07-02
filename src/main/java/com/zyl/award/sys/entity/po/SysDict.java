@@ -17,8 +17,8 @@ public class SysDict extends BasePO<Integer> {
     @Column(name = "dict_value")
     private String dictValue;
 
-    @Column(name = "catalog_id")
-    private Integer catalogId;
+    @Column(name = "catalog_code")
+    private String catalogCode;
 
     @Column(name = "sort")
     private Integer sort;
@@ -52,18 +52,12 @@ public class SysDict extends BasePO<Integer> {
         this.dictValue = dictValue;
     }
 
-    /**
-     * @return catalog_id
-     */
-    public Integer getCatalogId() {
-        return catalogId;
+    public String getCatalogCode() {
+        return catalogCode;
     }
 
-    /**
-     * @param catalogId
-     */
-    public void setCatalogId(Integer catalogId) {
-        this.catalogId = catalogId;
+    public void setCatalogCode(String catalogCode) {
+        this.catalogCode = catalogCode;
     }
 
     /**

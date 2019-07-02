@@ -30,7 +30,7 @@ public class SysUserController extends BaseController {
 
     @ApiOperation(value = "系统用户登陆")
     @PostMapping("/login")
-    public PlatformResult login(@RequestBody LoginDto loginDto){
+    public PlatformResult<SysUserVo> login(@RequestBody LoginDto loginDto){
         if(ObjectUtils.isEmpty(loginDto.getUserName())){
             throw new BusinessException(ResultCode.PARAM_NOT_COMPLETE);
         }
@@ -40,7 +40,7 @@ public class SysUserController extends BaseController {
 
     @ApiOperation("系统用户注册")
     @PostMapping("/register")
-    public PlatformResult register(@Validated @RequestBody SysUser sysUser){
+    public PlatformResult<SysUserVo> register(@Validated @RequestBody SysUser sysUser){
         if(ObjectUtils.isEmpty(sysUser.getMobile()) && ObjectUtils.isEmpty(sysUser.getUserName())){
             throw new BusinessException(ResultCode.PARAM_NOT_COMPLETE);
         }
@@ -52,7 +52,7 @@ public class SysUserController extends BaseController {
 
     @ApiOperation("根据用户id查询用户信息")
     @GetMapping
-    public PlatformResult userInfo(){
+    public PlatformResult<SysUserVo> userInfo(){
         return PlatformResult.success(getUserInfo());
     }
 

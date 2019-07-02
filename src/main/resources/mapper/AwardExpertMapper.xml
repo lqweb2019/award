@@ -15,7 +15,7 @@
     <result column="dept_name" jdbcType="VARCHAR" property="deptName" />
     <result column="vote_status_id" jdbcType="SMALLINT" property="voteStatusId" />
     <result column="vote_status_name" jdbcType="VARCHAR" property="voteStatusName" />
-    <result column="order" jdbcType="SMALLINT" property="order" />
+    <result column="sort" jdbcType="SMALLINT" property="order" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
   </resultMap>

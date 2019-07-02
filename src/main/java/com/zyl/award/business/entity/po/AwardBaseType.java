@@ -20,8 +20,8 @@ public class AwardBaseType extends BasePO<Integer> {
     @Column(name = "award_type")
     private Integer awardType;
 
-    @Column(name = "order")
-    private Integer order;
+    @Column(name = "sort")
+    private Integer sort;
 
     /**
      * 通过比率
@@ -63,17 +63,17 @@ public class AwardBaseType extends BasePO<Integer> {
     }
 
     /**
-     * @return order
+     * @return sort
      */
-    public Integer getOrder() {
-        return order;
+    public Integer getsort() {
+        return sort;
     }
 
     /**
-     * @param order
+     * @param sort
      */
-    public void setOrder(Integer order) {
-        this.order = order;
+    public void setsort(Integer sort) {
+        this.sort = sort;
     }
 
     /**

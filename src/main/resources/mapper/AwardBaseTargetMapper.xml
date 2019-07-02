@@ -12,7 +12,7 @@
     <result column="target_description" jdbcType="VARCHAR" property="targetDescription" />
     <result column="award_type_id" jdbcType="INTEGER" property="awardTypeId" />
     <result column="weight" jdbcType="INTEGER" property="weight" />
-    <result column="order" jdbcType="INTEGER" property="order" />
+    <result column="sort" jdbcType="INTEGER" property="order" />
     <result column="state" jdbcType="INTEGER" property="state" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />

@@ -32,8 +32,8 @@ public class BaseExpert extends BasePO<Integer> {
     @Column(name = "status")
     private Short status;
 
-    @Column(name = "order")
-    private Short order;
+    @Column(name = "sort")
+    private Short sort;
 
 
 
@@ -126,16 +126,16 @@ public class BaseExpert extends BasePO<Integer> {
     }
 
     /**
-     * @return order
+     * @return sort
      */
-    public Short getOrder() {
-        return order;
+    public Short getsort() {
+        return sort;
     }
 
     /**
-     * @param order
+     * @param sort
      */
-    public void setOrder(Short order) {
-        this.order = order;
+    public void setsort(Short sort) {
+        this.sort = sort;
     }
 }

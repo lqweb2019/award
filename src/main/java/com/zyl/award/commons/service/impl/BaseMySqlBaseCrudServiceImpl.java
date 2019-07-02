@@ -180,4 +180,27 @@ public abstract class BaseMySqlBaseCrudServiceImpl<E extends PO<PK>, PK> impleme
 		return PageVO.build(page);
 	}
 
+	@Override
+	public List<E> selectCondition(Object condition){
+
+			if (condition == null) {
+				return myMapper.selectAll();
+			} else if (condition instanceof Condition) {
+				return myMapper.selectByCondition(condition);
+			} else if (condition instanceof Example) {
+				return myMapper.selectByExample(condition);
+			} else if (poType.isInstance(condition)){
+				return myMapper.select((E)condition);
+			} else {
+				try {
+					E e = poType.newInstance();
+					BeanUtils.copyProperties(condition, e);
+					return myMapper.select(e);
+				} catch (InstantiationException | IllegalAccessException e) {
+					throw new RuntimeException("poType.newInstance occurs InstantiationException or IllegalAccessException", e);
+				}
+			}
+
+	}
+
 }

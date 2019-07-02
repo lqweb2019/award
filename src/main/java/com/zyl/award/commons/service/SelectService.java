@@ -44,4 +44,11 @@ public interface SelectService<E,PK> {
      * @return
      */
     PageVO<E> selectPage(PageQO pageQO, Object condition);
+
+    /**
+     * 带查询条件
+     * @param condition
+     * @return
+     */
+    List<E> selectCondition( Object condition);
 }

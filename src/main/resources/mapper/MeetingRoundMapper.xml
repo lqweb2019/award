@@ -22,7 +22,7 @@
     <result column="round_status_name" jdbcType="VARCHAR" property="roundStatusName" />
     <result column="target_ids" jdbcType="VARCHAR" property="targetIds" />
     <result column="wipe_min_max" jdbcType="TINYINT" property="wipeMinMax" />
-    <result column="order" jdbcType="TINYINT" property="order" />
+    <result column="sort" jdbcType="TINYINT" property="order" />
     <result column="award_type_type" jdbcType="TINYINT" property="awardTypeType" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />

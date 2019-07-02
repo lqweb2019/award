@@ -20,6 +20,10 @@ public class SysDictCatalog extends BasePO<Integer> {
     @Column(name = "sort")
     private Integer sort;
 
+    @Column(name = "catalog_code")
+    private String catalogCode;
+
+
 
 
     /**
@@ -62,5 +66,13 @@ public class SysDictCatalog extends BasePO<Integer> {
      */
     public void setSort(Integer sort) {
         this.sort = sort;
+    }
+
+    public String getCatalogCode() {
+        return catalogCode;
+    }
+
+    public void setCatalogCode(String catalogCode) {
+        this.catalogCode = catalogCode;
     }
 }

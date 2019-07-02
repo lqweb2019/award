@@ -8,6 +8,8 @@ import com.zyl.award.sys.entity.vo.SysRoleMenuVo;
 import com.zyl.award.sys.entity.vo.SysUserVo;
 import com.zyl.award.sys.service.SysMenuService;
 import com.zyl.award.sys.service.SysRoleMenuService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +24,7 @@ import java.util.List;
  * @description:
  * @create: 2019-06-30 14:08
  **/
+@Api(value = "用户菜单",tags = "用户菜单")
 @RestController
 @Slf4j
 @RequestMapping("/api/back/sysmenu")
@@ -33,14 +36,16 @@ public class SysMenuController extends BaseController {
     @Autowired
     SysRoleMenuService sysRoleMenuService;
 
+    @ApiOperation("获取节点Id下的所有节点")
     @GetMapping("tree/{treeId}")
-    public PlatformResult getTreeNode(@PathVariable("treeId") Integer treeId) {
+    public PlatformResult<Node<SysMenu>> getTreeNode(@PathVariable("treeId") Integer treeId) {
         Node<SysMenu> node = sysMenuService.selectNodeByParentId(treeId);
         return PlatformResult.success(node);
     }
 
+    @ApiOperation("获取用户的权限菜单")
     @GetMapping
-    public PlatformResult getMenu(){
+    public PlatformResult<List<SysRoleMenuVo>> getMenu(){
         SysUserVo sysUserVo = getUserInfo();
         List<SysRoleMenuVo> menuList = sysRoleMenuService.getMenuListByRoleId(sysUserVo.getRoleId());
         return PlatformResult.success(menuList);

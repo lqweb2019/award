@@ -12,7 +12,7 @@
     <result column="award_type_id" jdbcType="INTEGER" property="awardTypeId" />
     <result column="award_type_name" jdbcType="VARCHAR" property="awardTypeName" />
     <result column="status" jdbcType="SMALLINT" property="status" />
-    <result column="order" jdbcType="SMALLINT" property="order" />
+    <result column="sort" jdbcType="SMALLINT" property="order" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
   </resultMap>

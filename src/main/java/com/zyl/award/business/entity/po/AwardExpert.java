@@ -38,8 +38,8 @@ public class AwardExpert extends BasePO<Integer> {
     @Column(name = "vote_status_name")
     private String voteStatusName;
 
-    @Column(name = "order")
-    private Short order;
+    @Column(name = "sort")
+    private Short sort;
 
 
 
@@ -170,16 +170,16 @@ public class AwardExpert extends BasePO<Integer> {
     }
 
     /**
-     * @return order
+     * @return sort
      */
-    public Short getOrder() {
-        return order;
+    public Short getsort() {
+        return sort;
     }
 
     /**
-     * @param order
+     * @param sort
      */
-    public void setOrder(Short order) {
-        this.order = order;
+    public void setsort(Short sort) {
+        this.sort = sort;
     }
 }

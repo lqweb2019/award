@@ -61,8 +61,8 @@ public class MeetingRound extends BasePO<Integer> {
     @Column(name = "wipe_min_max")
     private Byte wipeMinMax;
 
-    @Column(name = "order")
-    private Byte order;
+    @Column(name = "sort")
+    private Byte sort;
 
     /**
      * 0->人员 1->项目
@@ -301,17 +301,17 @@ public class MeetingRound extends BasePO<Integer> {
     }
 
     /**
-     * @return order
+     * @return sort
      */
-    public Byte getOrder() {
-        return order;
+    public Byte getsort() {
+        return sort;
     }
 
     /**
-     * @param order
+     * @param sort
      */
-    public void setOrder(Byte order) {
-        this.order = order;
+    public void setsort(Byte sort) {
+        this.sort = sort;
     }
 
     /**
